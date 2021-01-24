@@ -1,0 +1,131 @@
+body {
+  background-color: teal;
+  text-align: center;
+}
+
+.btn {
+	border-radius: 10px;
+	border: none;
+	color: black;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 24px;
+	margin: 4px 2px;
+	width: 300px;
+	cursor: pointer;
+}
+
+.cbtn {
+	background-color: #333333;
+	color: white;
+	border-radius: 10px;
+	border: none;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 24px;
+	margin: 4px 2px;
+	width: 300px;
+	cursor: pointer;
+}
+
+.cbtn:focus{ border: 4px; border-style: solid;}
+
+
+.image {
+	height: 100px;
+}
+
+
+#btn1{
+		background-color: pink;
+}
+
+#btn2{
+		background-color: #00ace6;
+}
+
+#btn3{
+		background-color: #00cc99;
+}
+
+/* unvisited link */
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: black;
+  text-decoration: none;
+}
+
+table {
+	margin: auto;
+}
+
+.smbtn {
+	border-radius: 10px;
+	background-color: #00ace6;
+	border: none;
+	color: black;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 24px;
+	margin: 4px 2px;
+	width: 100px;
+	cursor: pointer;
+}
+
+#msgbox {
+	width: 400px;
+	height: 100px;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.avatar {
+	background-color: white;
+	border-radius: 50%;
+	height: 75px;
+}
+
+.chkbox {
+	width: 20px;
+	height: 20px;
+	border-radius: 5px;
+}
+
+.col {
+	
+	background-color: #333333;
+	color: white;
+	border-radius: 10px;
+	border: none;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 24px;
+	margin: 4px 2px;
+	width: 300px;
+}
+

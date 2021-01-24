@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>Challenges</title>
+
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+
+    <body>
+
+        <ul class="menubar">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="#">Dashboard</a></li>
+
+            <li><a class="active" href="challenges.html">Challenges</a></li>
+
+            <li><a href="#">Profile</a></li>
+
+            <li><a href="#">Login</a></li>
+
+            <li><a href="#">Sign out</a></li>
+
+        </ul>
+
+        <p id="show_sidebar" onclick="showSidebar()">|||</p>
+
+        <div id="sidebar">
+
+            <button id="sidebar_btn" onclick="hideSidebar()">X</button>
+
+            <ul>
+
+                <li><a href="select-challenge.html">Start a New Challenge</a></li>
+
+                <li><a class="active" href="#">View Rankings</a></li>
+
+                <li><a href="single_invite.html">View Invitations</a></li>
+
+            </ul>
+
+        </div>
+
+  <style >
+
+           .button {
+
+  				background-color: red;
+
+   				 border: none;
+
+				  color: black;
+
+ 				 padding: 20px 30px;
+
+ 				 text-align: center;
+
+  					font-size: 25px;
+
+  					cursor: pointer;
+
+					}
+
+
+
+.button2 {
+
+  background-color: lightgreen;
+
+}
+
+
+
+.button:hover {
+
+  background-color: yellow;
+
+}
+
+
+
+</style>
+
+
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+<center><a href="Finished Challenges.html"><button class="button">Finished Challenges</button></a> <br></center>
+
+<br>
+<center><a href="Active Challenges.html"><button class="button button2">Active Challenges</button></a> <br></center>
+
+
+
+
+
+
+
+        <script>
+
+            function hideSidebar() {
+
+                document.getElementById("sidebar").style.display = "none";
+
+                document.getElementById("show_sidebar").style.display = "block";
+
+            }
+
+            function showSidebar() {
+
+                document.getElementById("sidebar").style.display = "block";
+
+                document.getElementById("show_sidebar").style.display = "none";
+
+            }
+
+        </script>
+
+    </body>
+
+</html>

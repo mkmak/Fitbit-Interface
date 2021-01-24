@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+	<ul class="menubar">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="#">Dashboard</a></li>
+		<li><a class="active" href="challenges.html">Challenges</a></li>
+		<li><a href="#">Profile</a></li>
+		<li><a href="#">Login</a></li>
+		<li><a href="#">Sign out</a></li>
+	</ul>
+	<p id="show_sidebar" onclick="showSidebar()">|||</p>
+	<div id="sidebar">
+		<button id="sidebar_btn" onclick="hideSidebar()">Hide</button>
+		<ul>
+			<li><a class="active" href="select-challenge.html">Start a New Challenge</a></li>
+			<li><a href="rankings.html">View Rankings</a></li>
+			<li><a href="single_invite.html">View Invitations</a></li>
+		</ul>
+	</div>
+	<div class="content">
+		<Br>
+		<Br>
+		<Br>
+		<Br>
+		<Br>
+		<Br>
+		<table>
+		<th>
+			<tr>
+				<td><button class="cbtn" id="showdown">Daily Showdown<img class="image" src="img/sneakers1.png"><br></button><Br></td>
+				<td><button class="cbtn" id="warrior">Weekend Warrior<Br><img class="image" src="img/weekendwarrior1.png"></button></a><Br></td>
+			</tr>
+			<tr>
+				<td><button class="cbtn" id="hustle">Workweek Hustle<Br><img class="image" src="img/workhustle1.png"></button></a><Br></td>
+				<td><button class="cbtn" id="goal">Goal Day<br><img class="image" src="img/running-people1.png"></button></a><Br></td>
+			</tr>
+			<tr>
+				<td><button class="cbtn" id="family">Family Face Off<br><img class="image" src="img/family1.png"></button><Br></td>
+				<td><button class="cbtn" id="active">Active Minutes<br><img class="image" src="img/stopwatch1.png"></button><Br></td>
+			</tr>
+			<tr>
+				<td><button class="cbtn" id="stair">Stairs Count<br><img class="image" src="img/stairs1.png"></button><Br></td>
+				<td><button class="cbtn" id="sport">Soccer<br><img class="image" src="img/soccer1.png"></button><Br></td>
+			</tr>
+			<tr>
+				<td><button class="cbtn" id="dance">Happy Feet<br><img class="image" src="img/dancing1.png"></button><Br></td>
+				<td><button class="cbtn" id="dog">Dog Walk<br><img class="image" src="img/dog-walking1.png"></button><Br></td>
+			</tr>		
+		<table>
+		
+		<br><br>
+		<a href="challenges.html"><button class="smbtn">Cancel</button></a>&nbsp;&nbsp;&nbsp;
+		<a href="select-friends.html"><button class="smbtn">Next</button></a>
+	</div>
+
+	<script>
+		function hideSidebar() {
+			document.getElementById("sidebar").style.display = "none";
+			document.getElementById("show_sidebar").style.display = "block";
+		}
+		function showSidebar() {
+			document.getElementById("sidebar").style.display = "block";
+			document.getElementById("show_sidebar").style.display = "none";
+		}
+	</script>
+
+</body>
+</html>

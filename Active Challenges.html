@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Active Challenges</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    #show_sidebar {
+      left: 10px;
+      top: 40px;
+    }
+    .table {
+      position: absolute;
+      width: 50px;
+      left: 225px;
+    }
+  </style>
+</head>
+<body>
+
+  <ul class="menubar">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="#">Dashboard</a></li>
+		<li><a class="active" href="challenges.html">Challenges</a></li>
+		<li><a href="#">Profile</a></li>
+		<li><a href="#">Login</a></li>
+		<li><a href="#">Sign out</a></li>
+	</ul>
+	<p id="show_sidebar" onclick="showSidebar()">|||</p>
+	<div id="sidebar">
+		<button id="sidebar_btn" onclick="hideSidebar()">Hide</button>
+		<ul>
+			<li><a href="select-challenge.html">Start a New Challenge</a></li>
+			<li><a class="active" href="rankings.html">View Rankings</a></li>
+			<li><a href="single_invite.html">View Invitations</a></li>
+		</ul>
+	</div>
+<div class="content">
+
+          </br></br></br></br>
+          </br></br>
+
+
+          <h1><center>Active Challenges</center></h1>
+          <center><pre><h5><img src="total won.png" width="50" height="70">  Currently Winning : 1</h5></pre></center></br>
+
+         <table class="table">
+                <thead><tr class = "table-success">
+                    <th><pre> Group Name: Challenge   </pre></th>
+                    <th><pre>      Status              </pre></th>
+                    <th><pre>        Challenges Ends in:              </pre></th>
+                    <th><pre>     Standings  </pre></th>
+                </tr></thead>
+               
+                <tbody>
+                  <tr class="table-light">
+                    <td><pre>  Group 1 : Challenge   </pre></td>
+                    <td><pre>     Rank: 6  </pre></td>
+                    <td>
+                      <div class="progress">
+                          <div class="progress-bar bg-success" style="width:40%"></div>
+                          <div class="proht" style="width:1%"></div></div><pre><center>74 hours  35 minutes  45 seconds</center></pre>
+
+                   </td>
+
+
+                    <td><pre><div class="btn-group btn-group-sm"><a href="Leaderboard.html" class="btn btn-info" role="button">View Leaderboard</a></div></pre></td>
+
+
+                    
+
+
+                  </tr>
+
+                  <tr class="table-light">
+                    <td><pre>  Group 2 : Challenge   </pre></td>
+                    <td><pre>     Rank: 1  <img src="gold medal.jpg" width="30" height="30"></pre></td>
+                    <td>
+                      <div class="progress">
+                          <div class="progress-bar bg-danger" style="width:91%"></div>
+                          <div class="proht" style="width:1%"></div></div><pre><center>1 hours  13 minutes  08 seconds</center></pre>
+                   </td>
+
+
+                    <td><pre><div class="btn-group btn-group-sm"><a href="Leaderboard.html" class="btn btn-info" role="button">View Leaderboard</a></div></pre></td>
+
+                  </tr>
+
+                   <tr class="table-light">
+                    <td><pre>  Group 3 : Challenge   </pre></td>
+                    <td><pre>     Rank: 11  </pre></td>
+                    <td>
+                      <div class="progress">
+                          <div class="progress-bar bg-success" style="width:10%"></div>
+                          <div class="proht" style="width:1%"></div></div><pre><center>105 hours  18 minutes  24 seconds</center></pre>
+                   </td>
+                    
+
+                    <td><pre><div class="btn-group btn-group-sm"><a href="Leaderboard.html" class="btn btn-info" role="button">View Leaderboard</a></div></pre></td>
+
+                  </tr>
+
+                  <tr class="table-light">
+                    <td><pre>  Group 4 : Challenge   </pre></td>
+                    <td><pre>     Rank: 4  </pre></td>
+                    <td>
+                      <div class="progress">
+                          <div class="progress-bar bg-warning" style="width:80%"></div>
+                          <div class="proht" style="width:1%"></div></div><pre><center>15 hours  05 minutes  34 seconds</center></pre>
+                   </td>
+                   
+
+                    <td><pre><div class="btn-group btn-group-sm"><a href="Leaderboard.html" class="btn btn-info" role="button">View Leaderboard</a></div></pre></td>
+
+                  </tr>
+
+                  <tr class="table-light">
+                    <td><pre>  Group 5 : Challenge   </pre></td>
+                    <td><pre>     Rank: 3  </pre></td>
+                    <td>
+                      <div class="progress">
+                          <div class="progress-bar bg-danger" style="width:98%"></div>
+                          <div class="proht" style="width:1%"></div></div><pre><center>00 hours  05 minutes  13 seconds</center></pre>
+                   </td>
+                    
+
+                    <td><pre><div class="btn-group btn-group-sm"><a href="Leaderboard.html" class="btn btn-info" role="button">View Leaderboard</a></div></pre></td>
+
+                  
+
+                </tr></tbody>
+  </table>
+
+</div>
+
+  <script>
+    function hideSidebar() {
+      document.getElementById("sidebar").style.display = "none";
+      document.getElementById("show_sidebar").style.display = "block";
+    }
+    function showSidebar() {
+      document.getElementById("sidebar").style.display = "block";
+      document.getElementById("show_sidebar").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>

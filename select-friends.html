@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<ul class="menubar">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="#">Dashboard</a></li>
+		<li><a class="active" href="challenges.html">Challenges</a></li>
+		<li><a href="#">Profile</a></li>
+		<li><a href="#">Login</a></li>
+		<li><a href="#">Sign out</a></li>
+	</ul>
+	<p id="show_sidebar" onclick="showSidebar()">|||</p>
+	<div id="sidebar">
+		<button id="sidebar_btn" onclick="hideSidebar()">Hide</button>
+		<ul>
+			<li><a class="active" href="select-challenge.html">Start a New Challenge</a></li>
+			<li><a href="rankings.html">View Rankings</a></li>
+			<li><a href="single_invite.html">View Invitations</a></li>
+		</ul>
+	</div>
+	<div class="content">
+		<Br>
+		<Br>
+		<Br>
+		<table>
+		<th>
+			<tr>
+				<td><div class="col"><img class="avatar" src="img/male.png"><br>Jared<br><input class="chkbox" type="checkbox" name="friend" value="person"></div></td>
+				<td><div class="col"><img class="avatar" src="img/female.png"><br>Megan<br><input class="chkbox" type="checkbox" name="friend" value="person"></div></td>
+			</tr>
+			<tr>
+				<td><div class="col"><img class="avatar" src="img/female.png"><br>Linda<br><input class="chkbox" type="checkbox" name="friend" value="person"></div></td>
+				<td><div class="col"><img class="avatar" src="img/male.png"><br>Steve<br><input class="chkbox" type="checkbox" name="friend" value="person"></div></td>
+			</tr>
+			
+			<tr>
+			<td><div class="col"><img class="avatar" src="img/male.png"><br>Billy<br><input class="chkbox" type="checkbox" name="friend" value="person"></div></td>
+				<td><div class="col"><img class="avatar" src="img/female.png"><br>Amy<br><input class="chkbox" type="checkbox" name="friend" value="person"></div></td>
+			</tr>
+		<table>
+		
+		<br><br>
+		<textarea rows="4" cols="50" name="msg" id="msgbox">(Optional) Enter a Message...</textarea>
+		<br><Br>
+		<button class="smbtn" onclick="cancel()">Cancel</button>&nbsp;&nbsp;&nbsp;
+		<button class="smbtn" onclick="sent()">Send</button>
+	</div>
+
+	<script>
+		function sent() {
+			alert("Challenge has been sent!");
+			location.replace("challenges.html")
+		}
+		
+		function cancel() {
+			location.replace("challenges.html")
+		}
+
+		function hideSidebar() {
+			document.getElementById("sidebar").style.display = "none";
+			document.getElementById("show_sidebar").style.display = "block";
+		}
+		function showSidebar() {
+			document.getElementById("sidebar").style.display = "block";
+			document.getElementById("show_sidebar").style.display = "none";
+		}
+	</script>
+	
+</body>
+
+</html>
